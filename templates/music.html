@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/music"/>
+    <title>Title</title>
+</head>
+<body>
+
+
+{% block title %}<h1 style="text-align: center">404</h1> {% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+    slot 404
+{% endblock %}
+</body>
+</html>

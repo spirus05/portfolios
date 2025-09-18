@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block title %}<h1 style="text-align: left">Feature</h1> {% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2>{{ entry.title }}</h2>
+    <p>{{ entry.body }}</p>
+{% endfor %}
+    <p>portfolio</p>
+  <h1> <p>About</p>
+    <p>Contact</p>
+    <p>Product</p>
+  </h1>
+
+{% endblock %}
